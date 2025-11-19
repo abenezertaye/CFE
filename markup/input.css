@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'outfit-bold';
+  src: url(../fonts/outfit/static/Outfit-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Outfit-regular';
+  src: url(../fonts/outfit/static/Outfit-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'figtree';
+  src: url(../fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'young-serif';
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'zelando';
+  src: url(../fonts/Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf);
+}
+
+html,body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin:0;
+  padding: 0;
+  font-family: 'figtree';
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  width: 100%;
+  height:5rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border:1px solid rgb(223, 223, 223);
+}
+
+#first-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:1.2rem;
+  width: 18rem;
+  font-family: 'zelando';
+  font-size: clamp(1.3rem,2vw,1.6rem);
+}
+
+#header-image{
+  width:60px;
+  border-radius: 50%;
+}
+
+#second-section{
+  padding-right:1.2rem;
+}
+
+#contact-us{
+  background-color: white;
+  color:black;
+  width:7rem;
+  height:2.3rem;
+  border:1px solid black;
+  box-shadow: 5px 5px black;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  gap:1rem;
+  padding:2rem;
+  width:20rem;
+  height:19rem;
+  border:1px solid gray;
+  border-radius:20px;
+  font-size: 1.2rem;
+}
+
+
+input{
+  margin-top: 10px;
+  margin-left: 1rem;
+  width:18rem;
+  height:1.4rem;
+  border-radius: 1.2rem;
+  padding:10px;
+  border:1px solid;
+  border-bottom:3px solid;
+  outline-offset: none;
+  outline: none;
+}
+
+button{
+  width:5rem;
+  height:2rem;
+  font-family: 'figtree';
+  font-size:1rem;
+  background-color: black;
+  color:white;
+  border-radius: 1.2rem;
+  border:none;
+  cursor:pointer;
+  transition:all 0.4s;
+}
+
+button:hover{
+  background-color: white;
+  color:black;
+  box-shadow: 0px 0px 4px black;
+}
+
+button:active{
+  background-color: black;
+  color:white;
+}
+
+#submit-btn{
+  position:absolute;
+  right:2.2rem;
+  bottom:10px;
+}
