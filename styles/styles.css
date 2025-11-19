@@ -77,6 +77,21 @@
   transform: translateY(0);
 }
 
+#hidden-section{
+  display: none;
+}
+
+#hamburger-menu{
+  height:40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#hamburger-icon{
+  height:40px;
+  width:40px;
+}
+
 @keyframes hover-border{
   0%{opacity:0};
   100%{opacity:1};
@@ -165,6 +180,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
+  width:100%;
 }
 
 .section-choice{
@@ -227,7 +243,8 @@
 
 #cards-section{
   display:flex; 
-  gap:2rem; 
+  flex-wrap: wrap;
+  gap:1rem; 
 }
 
 .cards{
@@ -280,6 +297,7 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap:wrap;
   gap:1rem;
   padding-block:2rem;
   width:clamp(10rem,90vw,100rem);
@@ -320,6 +338,19 @@ img{
 }
 
 @media (max-width:700px){
+  header{
+    padding-inline:1rem;
+  }
+
+  #second-section,#third-section{
+    display: none;
+  }
+
+  #hidden-section{
+    display: block;
+  }
+
+
   #hero-section{
     display: flex;
     justify-content: center;
@@ -328,6 +359,19 @@ img{
   }
 
   .container{
+    width:100%;
+    flex-direction: column;
+  }
+
+  .f-section{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #cards-section{
+    display: flex;
     flex-direction: column;
   }
   .section-content-container{
